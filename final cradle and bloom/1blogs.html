@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blogs</title>
+
+    <style>
+        .nav {
+            /* background-color: #698C72; */
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            margin: 0;
+        }
+
+        .nav img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav-links {
+            margin-left: auto;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .sec {
+            /* background-color: #D9B573; */
+            padding: 40px 100px;
+        }
+
+        .journal {
+            font-size: 20px;
+            font-family: fantasy;
+            margin: 0 0 25px 0;
+        }
+
+        .sec h1 {
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            line-height: 1.1;
+            margin: 0;
+        }
+
+        .story {
+            display: flex;
+            background-color: white;
+            margin: 60px;
+            margin-top: 10px;
+            padding: 5px;
+            gap: 20px;
+        }
+
+        .story img {
+            width: 50%;
+        }
+
+        .storyText {
+            margin: 20px;
+            border: 1px dotted black;
+            padding: 10px;
+        }
+
+        .storyText h2 {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .storyText p {
+            font-size: 18px;
+            color: grey;
+        }
+
+        .cards {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding: 50px;
+        }
+
+        .card {
+            width: 33%;
+            background-color: white;
+            border: 3px solid #698C72;
+            border-radius: 12px;
+        }
+
+        .cardimg {
+            height: 220px;
+        }
+
+        .cardimg img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cardcontent {
+            height: 180px;
+            font-family: monospace;
+            padding: 20px;
+        }
+
+        footer {
+            background: #18251f;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        footer h2 {
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #bbb;
+            font-size: 13px;
+        }
+
+        .footer-col p {
+            color: #e0e0e0;
+            font-size: 7px;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .header {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("nutrition.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+         .dropdown{
+    position: relative;
+   }
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 190px;
+    padding:10px 0;
+    border-radius: 9px;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #333 !important;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-menu a:hover{
+    background: #d9d3c1;
+    color:#D97059;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0);
+}
+    </style>
+</head>
+
+<body style="background-color: #F3E9C9; margin:0">
+
+    <section class="header">
+
+        <nav class="nav">
+
+            <h2 style="color:#fff;">Cradle & Bloom</h2>
+
+            <a href="index.html">
+                <img src="logo-Photoroom.png">
+            </a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Drives in html.html">ACTIVE DRIVES</a></li>
+                    <li class="dropdown">
+                         <a href="areas.html">AREAS OF WORK &darr;</a>
+                        <div class="dropdown-menu">
+                            <a href="areas.html#education">Education</a>
+                            <a href="areas.html#healthcare">Healthcare</a>
+                            <a href="areas.html#nutrition">Nutrition</a>
+                            <a href="areas.html#shelter">Shelter</a>
+                            <a href="areas.html#women">Women Empowerment</a>
+                        </div>
+                    </li>
+                    <li><a href="1blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section class="sec">
+
+            <p class="journal">The Craddle & Bloom Journey</p>
+
+            <h1 style="color:white">
+                Stories that turn<br>
+                Compassion into Action
+            </h1>
+
+            <br>
+
+            <p style="font-size:16px;color:grey;font-family:'Times New Roman', Times, serif;margin: 0 0 25px 0">
+                Real stories about women, children and communities<br>
+                finding courage,rebuilding their lives and creating<br>
+                brighter tomorrows
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <section>
+
+        <h1 style="color:#698C72">
+            <b>----RECENTS------</b>
+        </h1>
+
+        <div class="story">
+
+            <img src="blogs-banner.jpeg" alt="flood">
+
+            <div class="storyText">
+
+                <h2>When the water rises, hope must rise too.</h2>
+
+                <p>
+                    Floods can change a family's life in just a few hours.
+                    Homes, food and basic necessities can be lost, leaving
+                    women and children especially vulnerable.
+                </p>
+
+                <p>
+                    With support and compassion, families can begin to rebuild
+                    and find hope again.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h1 style="text-align:center;font-family:monospace">
+            Stories Worth Sharing
+        </h1>
+
+        <hr>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="women.jpeg">
+                </div>
+
+                <div class="cardcontent">
+
+                    <h3>
+                        A mother given a way forward...
+                    </h3>
+
+                    <p style="font-size:11px;color:grey">
+                        When Meera first came to our community centre, she carried more than the small bag in her hands. She was carrying the responsibility of raising her young daughter while struggling to find stable work.
+
+                        After losing her source of income, even basic necessities such as school supplies and groceries had become difficult to manage.
+                    </p>
+
+                    <a href="women.html">Read more-></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="donor.jpeg">
+                </div>
+
+                <div class="cardcontent">
+
+                    <h3>
+                        Why I Give Monthly — A Donor's Story
+                    </h3>
+
+                    <p style="font-size:11px;color:grey">
+                        When Mr. Sharma made his first donation to Craddle & Bloom, he wasn't sure how much difference his contribution could make.
+                        He simply wanted to help.
+                        His donation became part of our education support program for children from underprivileged families. Among the children we were able to support was 12-year-old Anaya,
+                    </p>
+
+                    <a href="donor.html">Read more-></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="bag.png">
+                </div>
+
+                <div class="cardcontent">
+
+                    <h3>
+                        A school bag full of hopes...
+                    </h3>
+
+                    <p style="font-size:11px;color:grey">
+                        Ten-year-old Riya had always wanted to go to school, but her family struggled to afford even basic necessities. Her parents worked irregular jobs, and buying school supplies was often impossible.
+                        When Craddle & Bloom met Riya, she was attending school.....
+                    </p>
+
+                    <a href="bags.html">Read more-></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+
+            <h4>CONTACT US</h4>
+
+            <p>Bengaluru, Karnataka, India</p>
+            <p>info@cradleandbloom.com</p>
+            <p>+91 123 456 7890</p>
+
+            <br><br>
+
+            <h2>Cradle & Bloom</h2>
+
+            <p>
+                Growing Hope. Creating Change.
+            </p>
+
+            <p>
+                &copy; Cradle & Bloom. All Rights Reserved.
+            </p>
+
+        </footer>
+
+    </section>
+
+</body>
+</html>

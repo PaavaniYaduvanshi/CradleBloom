@@ -1,0 +1,423 @@
+<html>
+    <head>
+        <title>
+            Drives
+        </title>
+            <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }/*this for the greeen border till edges*/
+            .header{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+            }
+            #body{
+                background-color:white;
+            }
+
+            #text{
+                font-family:"Inter", sans-serif;
+                font-size: 20px;
+            }
+            .links{
+                text-decoration: none;
+                color:white;
+                font-size: 20px;
+                font-family:"Inter", sans-serif;
+            }
+            .links:hover{
+                text-decoration: underline;
+            }
+            .image-container{
+                height:500px;
+                width: 100%;
+                background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                url("image 1.jpg");
+                background-position: center;
+                background-size: contain;
+
+                display: flex;/*this aligns items verticaly and justifies it*/
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+
+            }
+            .image-text{
+                color: white;
+                text-align: center;
+                width: 100%;
+            }
+            #heading-1{
+                text-align: center;
+                width: 100%;
+                color:white;
+                font-family:"Inter", sans-serif;
+                background-color: #333;
+                padding: 30px 20px;
+                box-sizing: border-box;
+            }
+            #heading-2{
+                color:#1F2E28;
+                text-align: center;
+                margin: 50px 0 10px 0;
+                font-family:"Inter", sans-serif;
+                font-size: 30px;
+            }
+            #heading-3{
+                color:#698C72;
+                text-align: center;
+                margin:0 20px 40px 20px;
+                font-family:"Inter", sans-serif;
+                font-size: 20px;
+            }
+            .section-label{
+                color:#1F2E28;
+                font-family:"Inter", sans-serif;
+                font-size: 30px;
+                padding-left: 50px;
+                margin: 0 0 25px 0;
+            }
+
+            /* ---- Card grid ---- */
+            .drive-grid{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(280px, 1fr));
+                gap: 30px;
+                max-width: 1100px;
+                margin: 0 auto 60px auto;
+                padding: 0 50px;
+                box-sizing: border-box;
+            }
+            .drive-card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+            .drive-card{
+                background-color: #FBF6E6;
+                border-radius: 20px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 6px 16px rgba(31, 46, 40, 0.12);
+                box-shadow: 0 6px 16px rgba(31, 46, 40, 0.12);
+                
+            }
+            .drive-card-image{
+                height:180px;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: flex-end;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            .drive-card-image.books{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 3.jpg");
+            }
+            .drive-card-image.meals{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 5.jpeg");
+            }
+            .drive-card-image.period{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 4.jpeg");
+            }
+            .drive-card-image.career{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 6.jpeg");
+            }
+            .drive-card-title{
+                color: white;
+                font-family:"Inter", sans-serif;
+                font-size: 24px;
+                margin: 0;
+            }
+            .drive-card-body{
+                padding: 20px 25px 25px 25px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+            .drive-card-desc{
+                font-family:"Inter", sans-serif;
+                font-size: 17px;
+                color: #1F2E28;
+                line-height: 1.5;
+                margin: 0 0 15px 0;
+            }
+            .drive-card-raised{
+                font-family:"Inter", sans-serif;
+                font-size: 15px;
+                color: #698C72;
+                margin: 0 0 20px 0;
+            }
+            .drive-card-body .donate{
+                margin-top: auto;
+                align-self: flex-start;
+            }
+            .donate{
+                background-color:#76A1A6;
+                border-radius:10px;
+                border-style: solid;
+                border-color:#76A1A6;
+                height:44px;
+                padding: 0 20px;
+                font-size: 20px;
+                color: white;
+                font-family:"Inter", sans-serif;
+                cursor: pointer;
+            }
+            .donate:hover{
+                background-color:#5f888d;
+                border-color:#5f888d;
+            }
+
+            @media (max-width: 720px){
+                .drive-grid{
+                    grid-template-columns: 1fr;
+                    padding: 0 20px;
+                }
+            }
+            .drive-card-image.money{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 9.png");
+            }
+            .drive-card-image.entrepreneurship{
+                background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.45)), url("image 10.png");
+            }
+            footer{
+                background: #18251f;
+                color: white;
+                text-align: center;
+                padding: 45px 20px;
+            }
+
+
+            footer h2{
+                margin-bottom: 8px;
+            }
+
+
+            footer p{
+                color: #bbb;
+                font-size: 13px;
+            }
+nav a{
+                display: flex;
+                align-items: center;
+            }
+            nav img{
+                width: 80px;
+                height: auto;
+                display: block;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+                justify-content: flex-end;
+                margin: -50px;
+
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .nav-links ul li::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #d9b573;
+                display: block;
+                margin: auto;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%; 
+                transition: 0.3s;
+            }  
+    
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 190px;
+    padding:10px 0;
+    border-radius: 9px;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #333 !important;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-menu a:hover{
+    background: #d9d3c1;
+    color:#D97059;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0);
+}  
+.areas-intro{
+    max-width: 850px;
+    margin: auto;
+    padding: 90px 25px 70px;
+    text-align: center;
+}
+
+.areas-intro h2{
+    font-size: 38px;
+    color:#698c72;
+    margin: 10px 0 20px;
+}
+
+
+.areas-intro h2 span{
+    color: #76a1a6;
+}
+
+.intro-text{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}        
+            </style>
+    </head>
+    <body class="background-color:#F3E9C9">
+        <section class="header">
+            <nav class="nav">
+            <a href="index.html"><img src="logo-Photoroom.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Drives in html.html">ACTIVE DRIVES</a></li>
+                    <li class="dropdown">
+                         <a href="areas.html">AREAS OF WORK &darr;</a>
+                        <div class="dropdown-menu">
+                            <a href="areas.html#education">Education</a>
+                            <a href="areas.html#healthcare">Healthcare</a>
+                            <a href="areas.html#nutrition">Nutrition</a>
+                            <a href="areas.html#shelter">Shelter</a>
+                            <a href="areas.html#women">Women Empowerment</a>
+                        </div>
+                    </li>
+                    <li><a href="1blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            </nav>
+        </section>
+    <div class="image-container"><h1 class="image-text">Where Every Empowering Journey Begins</h1></div>
+    <div id="heading-1">
+        <p style="font-size: 30px; margin: 0 0 10px 0;">Every drive is a way for a kid to stay in school or a woman to feel empowered.</p>
+        <p style="font-size: 20px; color:#F3E9C9; margin: 0;"><i>Pick a drive below and give directly toward it — books, meals, clothes, blankets, or a year of tuition. Every gift goes to that need, nothing else.</i></p>
+    </div>
+
+    <section class="areas-intro" style="background-color: white; background-size: cover;">
+        <p class="section-label">On The Ground</p>
+        <h2>Urgent Action Needed <span>Today</span></h2>
+        <p class="intro-text">
+            Our active drives are high-priority initiatives providing immediate relief, 
+            essential supplies, and direct aid to vulnerable women and children.
+        </p>
+    </section>
+    <div class="section-label">Drives for children</div>
+    <div class="drive-grid">
+        <div class="drive-card">
+            <div class="drive-card-image books"><h2 class="drive-card-title">Books for Every Backpack</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">Many kids share one worn textbook between three or four classmates. This drive puts a full set of textbooks and a few storybooks into every backpack at three primary schools.</p>
+                <p class="drive-card-raised"><i>1 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+
+        <div class="drive-card">
+            <div class="drive-card-image meals"><h2 class="drive-card-title">School meals program</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">A hot lunch is the difference between a child who can focus in class and one who's counting minutes until they get home to eat. This covers daily meals for a full term.</p>
+                <p class="drive-card-raised"><i>2 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-label">Drives for women</div>
+    <div class="drive-grid">
+        <div class="drive-card">
+            <div class="drive-card-image period"><h2 class="drive-card-title">Period drive</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">Many women miss work or school because they can't afford pads or tampons. This drive keeps a full year of supplies stocked at local shelters.</p>
+                <p class="drive-card-raised"><i>1 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+
+        <div class="drive-card">
+            <div class="drive-card-image career"><h2 class="drive-card-title">Career closet drive</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">One good outfit can be the difference between getting a job and missing the opportunity.</p>
+                <p class="drive-card-raised"><i>2 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+         <div class="drive-card">
+            <div class="drive-card-image money"><h2 class="drive-card-title">Financial Literacy & Microfinance Drives</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">Teaching budgeting, savings, and connecting women to microloans or SHGs (Self-Help Groups).</p>
+                <p class="drive-card-raised"><i>4 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+         <div class="drive-card">
+            <div class="drive-card-image entrepreneurship"><h2 class="drive-card-title">Entrepreneurship Support Drives</h2></div>
+            <div class="drive-card-body">
+                <p class="drive-card-desc">Mentorship, funding access, and market linkage for women-run small businesses.</p>
+                <p class="drive-card-raised"><i>4 Lakh+ donations raised so far.</i></p>
+                <button class="donate" onclick="window.location.href='sign-up.html'">Donate</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <h4>CONTACT US</h4>
+        <p>Bengaluru, Karnataka, India</p>
+        <p>info@cradleandbloom.com</p>
+        <p>+91 123 456 7890</p><br><br>
+
+        <h2>Cradle & Bloom</h2>
+        <p>
+            Growing Hope. Creating Change.
+        </p>
+
+        <p>&copy; Cradle & Bloom. All Rights Reserved.</p>
+
+        
+    
+        
+    </footer>
+    </body>
+</html>

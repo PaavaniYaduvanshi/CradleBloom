@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Cradle & Bloom - Areas of Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+ rel="stylesheet">
+
+   </head> 
+   <body class="areas-page">
+    <section class="header areas-header">
+        <nav class="nav">
+            <h2 style="color:#fff;">Cradle & Bloom</h2>
+            <a href="index.html"><img src="logo-Photoroom.png"></a>
+            <div class="nav-links">
+                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Drives in html.html">ACTIVE DRIVES</a></li>
+                    <li class="dropdown">
+                         <a href="areas.html">AREAS OF WORK &darr;</a>
+                        <div class="dropdown-menu">
+                            <a href="areas.html#education">Education</a>
+                            <a href="areas.html#healthcare">Healthcare</a>
+                            <a href="areas.html#nutrition">Nutrition</a>
+                            <a href="areas.html#shelter">Shelter</a>
+                            <a href="areas.html#women">Women Empowerment</a>
+                        </div>
+                    </li>
+                    <li><a href="1blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <!--------Hero-------->
+
+        <div class="areas-hero">
+            <div class="hero-content">
+                <p class="small-heading">What We Do</p>
+                <h1>Areas of <span>Work</span></h1>
+                <p>
+                    Creating brighter futures through compassion,
+                    opportunity and meaningful action.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-----Introduction---->
+
+    <section class="areas-intro">
+        <p class="section-label">Our Mission</p>
+        <h2>Where Hope Meets <span>Action</span></h2>
+
+        <p class="intro-text">
+            Our programs focus on five interconnected pillars to address immediate needs
+             while fostering long-term independence for women and children across India.
+        </p>
+    </section>
+
+    <!-----Areas of work------->
+    <section class="work-section">
+        <p class="section-label">Our Focus</p>
+        <h2>Areas We Work In</h2>
+        <div class="work-grid">
+            <!-----Education------>
+
+            <div class="work-card" id="education" onclick="showMessage('Education')">
+                <div class="card-image">
+                    <img src="education.jpeg" alt="Education">
+                </div>
+
+                <div class="card-content">
+                    <span>01</span>
+                    <h3>Education</h3>
+                    <p>
+                        Providing quality primary education, learning materials, 
+                        and after-school tutoring to keep vulnerable children in school.
+                    </p>
+
+                    <button>Learn More &rarr;</button>
+                </div>
+            </div>
+
+            <!-----healthcare------>
+            <div class="work-card" id="healthcare" onclick="showMessage('Healthcare')">
+                <div class="card-image">
+                    <img src="healthcare-drive.jpg" alt="Healthcare">
+                </div>
+
+                <div class="card-content">
+                    <span>02</span>
+                    <h3>Healthcare</h3>
+                    <p>
+                        Organizing mobile health clinics, 
+                        routine health screenings, and maternal care support for underserved rural areas.
+                    </p>
+
+                    <button>Learn More &rarr;</button>
+                </div>
+            </div>
+
+            <!-----nutrition------>
+            <div class="work-card" id="nutrition" onclick="showMessage('Nutrition')">
+                <div class="card-image">
+                    <img src="nutrition.jpg" alt="Nutrition">
+                </div>
+
+                <div class="card-content">
+                    <span>03</span>
+                    <h3>Nutrition</h3>
+                    <p>
+                        Combating childhood malnutrition through daily balanced meal drives, 
+                        essential vitamins, and nutritional counseling for mothers.
+                    </p>
+
+                    <button>Learn More &rarr;</button>
+                </div>
+            </div>
+
+            <!-----shelter------>
+            <div class="work-card" id="shelter" onclick="showMessage('Shelter')">
+                <div class="card-image">
+                    <img src="shelter.jpg" alt="Shelter">
+                </div>
+
+                <div class="card-content">
+                    <span>04</span>
+                    <h3>Shelter</h3>
+                    <p>
+                        Creating safe living environments, 
+                        emergency relief support, and essential home sanitation facilities for 
+                        families in need.
+                    </p>
+
+                    <button>Learn More &rarr;</button>
+                </div>
+            </div>
+
+            <!-----Women Empowerment------>
+            <div class="work-card" id="women" onclick="showMessage('Women Empowerment')">
+                <div class="card-image">
+                    <img src="women-empowerment.png"
+                     alt="Women Empowerment">
+                </div>
+
+                <div class="card-content">
+                    <span>05</span>
+                    <h3>Women Empowerment</h3>
+                    <p>
+                        Offering self-help groups, 
+                        vocational skill workshops, and micro-financing to help women 
+                        achieve economic independence
+                    </p>
+
+                    <button>Learn More &rarr;</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-----How We Help----->
+
+    <section class="help-section">
+        <div class="help-text">
+            <p class="section-label">MAKE AN IMPACT </p>
+            <h2>Small Actions.<br><span>Big Change</span></h2>
+            <p>
+                Every child deserves a safe start, and every mother deserves the chance to build a stable future.<br>
+                 Your support delivers healthcare, education, and livelihood tools directly to families in need.
+            </p>
+
+            <a href="payments.html" class="help-button">JOIN OUR MISSION</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <h4>CONTACT US</h4>
+        <p>Bengaluru, Karnataka, India</p>
+        <p>info@cradleandbloom.com</p>
+        <p>+91 123 456 7890</p><br><br>
+
+        <h2>Cradle & Bloom</h2>
+        <p>
+            Growing Hope. Creating Change.
+        </p>
+
+        <p>&copy; Cradle & Bloom. All Rights Reserved.</p>
+
+        
+    
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+   </body>
+</html>

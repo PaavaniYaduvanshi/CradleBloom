@@ -1,0 +1,131 @@
+.navigatebar{
+    background-color:#698C72;
+
+    display:flex;
+    align-items:center;
+    padding-bottom:0px;
+    padding-top: 0px;
+    margin:0px;
+
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+
+
+}
+nav a{
+    color:black;
+    font-size:20px;
+    text-decoration:none
+}
+nav a:hover{
+    text-decoration:underline
+}
+
+
+
+
+
+ 
+.sec {
+    background-color: #D9B573;
+    padding: 40px 100px;
+}
+
+.journal {
+    font-size: 20px;
+    font-family: fantasy;
+    margin: 0 0 25px 0;
+}
+
+.sec h1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 0;
+}    
+.story {
+    display:flex;
+    background-color:white;
+    margin:60px;
+    margin-top:10px;
+    padding:5px;
+    gap:20px
+    
+
+} 
+.story img{
+    width:50%;
+   
+
+
+} 
+.storyText{
+    margin:20px;
+    border:1px dotted black;
+    padding:10px
+} 
+.storyText  h2{
+    font-size:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}  
+.storyText  p{
+    font-size:18px;
+    color:grey;
+
+
+} 
+
+
+.cards{
+    display:flex;
+    gap:30px;
+    margin-top:20px;
+    padding:50px
+}
+.card{
+    width:33%;
+    background-color:white;
+    border:3px solid #698C72;
+    border-radius:12px
+}
+.cardimg{
+    height:220px;
+}
+.cardimg img{
+    width:100%;
+    height:100%;
+
+}
+.cardcontent{
+    height:180px;
+    font-family:monospace;
+    padding:20px
+
+}
+footer{
+    background: #18251f;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2{
+    margin-bottom: 8px;
+}
+
+footer p{
+    color: #bbb;
+    font-size: 13px;
+}
+
+.footer-col p{
+    color: #e0e0e0;
+    font-size: 7px;
+    margin-bottom: 8px;
+    line-height: 1;
+}

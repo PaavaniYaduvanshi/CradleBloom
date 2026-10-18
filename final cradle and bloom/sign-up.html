@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>
+            sign up
+        </title>
+   
+    <style>
+        #form{
+            color:#1F2E28;
+            font-size: 20px;
+            width: 500px;
+            height: 300px;
+            margin:auto;
+            border-style: solid;
+            background-color:#F3E9C9;
+            padding: 50px;
+            
+            
+            
+            border-radius: 10px;
+
+            font-family: "Inter", sans-serif;
+        }
+        #sign-up{
+            text-align: center;
+            color:#1F2E28;
+            font-size: 30px;
+        }
+        .nav{
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d9b573;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+   width: 100%; 
+   transition: 0.3s;
+}
+    #button{
+        background-color:#1F2E28;
+        text-align: center;
+        color: white;
+        height: 30px;
+        width:100px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        width: 100px;
+        height:30px;
+        font-family: "Inter", sans-serif;
+    }
+    #tc{
+        text-align: center;
+        font: 50px;
+    }
+    #header{
+        height:200px;
+        width:100%;
+        background-color: #1F2E28;
+        background-color: rgba(31, 46, 40, 0.7);
+        color: #8FAE3D;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    label{
+        display:block;
+    }
+    input{
+        display: inline;
+        width: 100%;;
+    }
+    footer{
+        background: #18251f;
+        color: white;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+
+    footer h2{
+        margin-bottom: 8px;
+    }
+
+
+    footer p{
+        color: #bbb;
+        font-size: 13px;
+    }
+    .footer-col p{
+        color: #e0e0e0;
+        font-size: 7px;
+        margin-bottom: 8px;
+        line-height: 1;
+    }
+    nav a{
+        display: flex;
+        align-items: center;
+        }
+    </style></head>
+    
+    <body style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+            url(image\ 12.png); background-size:cover; background-repeat: no-repeat; background-position: center;">
+        <section class="header">
+            <nav class="nav">
+            <a href="index.html"><img src="logo-Photoroom.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="drives.html">ACTIVE DRIVES</a></li>
+                    <li><a href="areas.html">AREAS OF WORK</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+        </section>
+        <header id="header"><span><pre>184,000 <i style="font-size: 20px; color: #d9b573;">meals served</i>    620<i style="font-size: 20px; color: #d9b573;"> women in shelter</i> </pre></span><br></header>
+        <p style="color:white; text-align:center;">Support women and children rebuilding their lives.</p>
+        <div id="sign-up">
+            <i style="font-size: 20px; color: white;">Create an account to volunteer, give monthly, or follow the families Cradle & Bloom houses and educates.</i><br><br></div>
+            <form action="payments.html"></form><fieldset id="form"><labeL>Full name</labeL>
+            <input type="text" required ><br><br>
+            <labeL>Email address</labeL>
+            <input type="email" required><br><br>
+            <labeL>Password</labeL>
+            <input type="password" required ><br><br>
+           
+            <div  style="font-size: 15px; color:#1F2E28;"><input type="checkbox" required><i>By continuing, you agree to Cradle & Bloom's terms and privacy policy. We'll never sell your information.</i></div><br>
+            <button type="submit" id="button">Create an Account</button><br><br>
+            <a href="login.html" style="text-align: center;color:red">Already have an account?</a></p>
+
+            </fieldset></form><br><br>
+        </div>
+        <footer class="footer">
+            <h4>CONTACT US</h4>
+            <p>Bengaluru, Karnataka, India</p>
+            <p>info@cradleandbloom.com</p>
+            <p>+91 123 456 7890</p><br><br>
+            <h2>Cradle & Bloom</h2>
+            <p>
+            Growing Hope. Creating Change.
+        </p>
+        <p>&copy; Cradle & Bloom. All Rights Reserved.</p></footer>
+        
+    </body>
+</html>

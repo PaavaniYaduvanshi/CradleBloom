@@ -1,0 +1,249 @@
+<html>
+<head>
+    <title>Cradle & Bloom — Donate</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #F3E9C9; /* buttermilk */
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+            url(image\ 8.png);
+            background-size: contain;
+            background-position: center;
+        }
+        
+        .links {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .amp i {
+            color: #DDA83C;
+        }
+ 
+        .donate-box {
+            max-width: 380px;
+            margin: 60px auto;
+            background-color: #FFFDF5;
+            border: 1px solid #E8DCB5;
+            border-radius: 10px;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            border-color: #698C72;
+            margin-top: 200px;
+            
+        }
+        .donate-box h2 {
+            font-family: Georgia, serif;
+            margin-top: 0;
+            color: #6B4F3B;
+
+        }
+        .amount-options {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .amount-options button {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #C9962B;
+            background: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .amount-options button.selected {
+            background-color: #DDA83C;
+            color: white;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"],input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .pay-button{
+            width: 100%;
+            padding: 12px;
+            background-color: #DDA83C;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .pay-button:hover {
+            background-color: #C9962B;
+        }
+        footer{
+                background: #18251f;
+                color: white;
+                text-align: center;
+                padding: 45px 20px;
+            }
+
+
+            footer h2{
+                margin-bottom: 5px;
+                margin-top:5px;
+            }
+
+
+            footer p{
+                color: #bbb;
+                font-size: 13px;
+            }
+            .footer-col p{
+                color: #e0e0e0;
+                font-size: 7px;
+                margin-bottom: 8px;
+                line-height: 1;
+            }
+            .nav{
+                width: 100%;
+                display: flex;
+                padding: 20px 40px;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box
+            }
+
+
+
+            nav a{
+                display: flex;
+                align-items: center;
+            }
+            nav img{
+                width: 80px;
+                height: auto;
+                display: block;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+                justify-content: flex-end;
+
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .nav-links ul li::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #d9b573;
+                display: block;
+                margin: auto;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%; 
+                transition: 0.3s;
+            }
+            .dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 190px;
+    padding:10px 0;
+    border-radius: 9px;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #333 !important;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-menu a:hover{
+    background: #d9d3c1;
+    color:#D97059;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0);
+}
+    </style>
+</head>
+<body style="background-image: linear-gradient(rgba(0,0,0,0.0.5),rgba(0,0,0,0.0.5)),
+            url(image\ 8.png); background-size:cover; background-repeat: no-repeat;">
+        <section class="header">
+            <nav class="nav">
+            <a href="index.html"><img src="logo-Photoroom.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Drives in html.html">ACTIVE DRIVES</a></li>
+                    <li class="dropdown">
+                         <a href="areas.html">AREAS OF WORK &darr;</a>
+                        <div class="dropdown-menu">
+                            <a href="areas.html#education">Education</a>
+                            <a href="areas.html#healthcare">Healthcare</a>
+                            <a href="areas.html#nutrition">Nutrition</a>
+                            <a href="areas.html#shelter">Shelter</a>
+                            <a href="areas.html#women">Women Empowerment</a>
+                        </div>
+                    </li>
+                    <li><a href="1blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            </nav>
+        </section>
+ 
+    <div class="donate-box">
+        <h2>Make a Donation</h2>
+        <p>Choose an amount to support women and children in need.</p>
+ 
+        <input type="number" id="customAmount" placeholder="Enter amount (₹) required">
+        <input type="text" placeholder="Full Name required ">
+        <input type="email" placeholder="Email Address required">
+        <input type="number" placeholder="Card Number required">
+        <button class="pay-button" onclick="showAlert()">Donate</button>
+    </div>
+    <script>
+        function showAlert(){
+            alert("Donation made")
+        }
+    </script>
+    <footer class="footer">
+
+        <h4>CONTACT US</h4>
+        <p>Bengaluru, Karnataka, India</p>
+        <p>info@cradleandbloom.com</p>
+        <p>+91 123 456 7890</p><br><br>
+
+        <h2>Cradle & Bloom</h2>
+        <p>
+            Growing Hope. Creating Change.
+        </p>
+
+        <p>&copy; Cradle & Bloom. All Rights Reserved.</p></footer>
+    </body>
+</html>
