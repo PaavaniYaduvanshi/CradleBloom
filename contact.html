@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        .nav {
+    /* background-color: #698C72; */
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    margin: 0;
+}
+
+.nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.bg{
+    height:500px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url("education.jpeg");
+    background-size:cover;
+    background-position:center; */
+    display:flex;
+    
+}
+
+.dropdown{
+    position: relative;
+   }
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 190px;
+    padding:10px 0;
+    border-radius: 9px;
+    box-shadow: 0 9px 0 rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: #333 !important;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-menu a:hover{
+    background: #d9d3c1;
+    color:#D97059;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("education.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    color:white;
+    padding-left:250px;
+}
+.text p{
+    font-size:80px
+}
+.vision{
+    background-color:#76A1A6;
+    display:flex;
+    justify-content:center;
+    margin:30px 180px;
+    border-radius:10px;
+    border:2px dotted black;
+
+    
+}
+
+.pictures{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    justify-content:center;
+}
+
+.one,.two,.three{
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    width:280px ;
+    height: 280px;
+
+    align-items: center;
+    justify-content: center;
+    border-radius:8px;
+    border:5px solid palevioletred;
+
+}
+.names{
+    display:flex;
+    align-items: center;
+    gap:240px;
+    justify-content:center;
+}
+
+.onet,.twot,.threet{
+    
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius:8px; */
+    /* border:2px solid palevioletred; */
+    margin:5px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.one {
+    background-image: url("ankita.jpeg");
+
+}
+.two {
+    background-image: url("paavni1.jpeg");
+}
+.three {
+    background-image: url("vaishnavi.jpeg");
+}
+
+
+
+footer{
+    background: #18251f;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2{
+    margin-bottom: 8px;
+}
+
+footer p{
+    color: #bbb;
+    font-size: 13px;
+}
+
+.footer-col p{
+    color: #e0e0e0;
+    font-size: 7px;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+.box{
+    display:flex;
+    width:80%;
+    gap:30px;
+    margin:10px auto;
+    align-items : center;
+    justify-content:center;
+    background-color:white;
+
+    
+
+}
+.commentbox{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center
+    
+
+}
+.commentbox label{
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px
+}
+.commentbox input{
+    margin-bottom: 25px;
+    font-size:24px;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    align-items : center;
+    justify-content:center;
+    border:2px solid black;
+    padding:30px;
+    width:50%
+    
+
+}
+.connect{
+    width:50%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(education.jpeg);
+    color:white;
+    font-size:20px;
+    font-family:fantasy;
+    padding:10px;
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    border:30px solid #698C72;
+    
+
+}
+
+@media only screen and(max-width:800px){
+    body{
+        background-color: blueviolet;
+    }
+}
+    </style>
+</head>
+<body style="background-color: #F3E9C9;margin:0">
+    <nav class="header">
+        <nav class="nav">
+
+                <h2 style="color:#fff;">Cradle & Bloom</h2>
+
+                <a href="index.html">
+                    <img src="logo-Photoroom.png">
+                </a>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Drives in html.html">ACTIVE DRIVES</a></li>
+                        <li class="dropdown">
+                            <a href="areas.html">AREAS OF WORK &darr;</a>
+                            <div class="dropdown-menu">
+                                <a href="areas.html#education">Education</a>
+                                <a href="areas.html#healthcare">Healthcare</a>
+                                <a href="areas.html#nutrition">Nutrition</a>
+                                <a href="areas.html#shelter">Shelter</a>
+                                <a href="areas.html#women">Women Empowerment</a>
+                            </div>
+                        </li>
+                    
+                        <li><a href="1blogs.html">BLOGS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+
+        </nav>
+        
+        <section class="bg">
+            <div class="text">
+                <p >
+                    Join Us And Help Create<br><br>
+                    A Beautiful World
+                </p>
+                
+            </div>    
+        </section>
+        
+    </nav>
+    
+    <div class="box">
+        <div class="form">
+            <h1 style="font-family: fantasy;"> Write a comment ---</h1>
+            <form class="commentbox">
+                <label >NAME : </label>
+                <input type="text"></input>
+
+                <label >EMAIL : </label>
+                <input type="email"></input>
+
+                <label >MESSAGE : </label>
+                <textarea style="height:120px"></textarea>
+                <br>
+                <button type="submit" style="background-color: red;width:50px;height:26px">submit</button>
+                
+
+            </form>
+            
+        </div>
+        
+        <div class="connect">
+            <h2>Connect With Us</h2>
+            <p><u>Follow us and stay connected with our work.</u></p>
+
+            <pre>Instagram : craddle&bloom.instagram.in</pre>
+            <pre>Facebook  : craddle&bloom.facebook.in</pre>
+            <pre>Email     : craddle&bloom@gmail.com</pre>
+            <br><br>
+
+        </div>
+    </div>
+
+   
+
+
+
+    <section class="vision">
+        <p style="text-align:center;font-family: fantasy; font-size:22px">
+            
+
+            🌱 Our Vision<br><br><br>
+            “A world where every woman and child has the opportunity to live with dignity, <br>grow with confidence, and build a brighter future.”<br>
+
+            We envision a future where no woman or child is held back by poverty, neglect, or lack of opportunity.<br> Through compassion, support, education, and empowerment, we strive to create safe spaces where women can<br> become independent and children can dream, learn, and thrive.
+
+        </p>
+
+    </section>
+    <section class="pictures">
+        <div class="one">  
+             
+        </div>
+        <div class="two">  
+        </div>
+
+        <div class="three"> 
+        </div>
+
+        
+    </section>
+    <section class="names">
+        <div class="onet">  
+            <p>Ankita</p>
+             
+        </div>
+        <div class="twot">  
+            <p>Paavni</p>
+        </div>
+
+        <div class="threet"> 
+            <p>Vaishnavi</p>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+
+        <h4>CONTACT US</h4>
+        <p>Bengaluru, Karnataka, India</p>
+        <p>info@cradleandbloom.com</p>
+        <p>+91 123 456 7890</p><br><br>
+
+        <h2>Cradle & Bloom</h2>
+        <p>
+            Growing Hope. Creating Change.
+        </p>
+
+        <p>&copy; Cradle & Bloom. All Rights Reserved.</p>
+
+        
+    
+        
+    </footer>
+    
+</body>
+</html>

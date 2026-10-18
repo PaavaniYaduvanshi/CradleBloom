@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>
+            payment
+        </title>
+        <style>
+            #body{
+                background-color:#F3E9C9;
+            }
+            #payment-box{
+                margin:auto;
+                width:1000px;
+                height: 500px;
+                background-color: #1F2E28;
+                color: white;
+                text-align: center;
+                font-family: "Inter", sans-serif;
+            }
+            .nav{
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d9b573;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+   width: 100%; 
+   transition: 0.3s;
+}
+    #payment-method{
+        display:flex;
+        gap: 5px;
+        font-size: 20px;
+        
+
+    }
+    .money{
+        display:flex;
+        gap: 20px;
+    }
+        </style>
+    </head>
+    <body id="body">
+        <section class="header">
+            <nav class="nav">
+            <a href="index.html"><img src="logo-Photoroom.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ACTIVE DRIVES</a></li>
+                    <li><a href="">AREAS OF WORK</a></li>
+                    <li><a href="">BLOGS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+        </section>
+        <fieldset id="payment-box">
+           <div id="payment-heading"><b>Choose a payment method</b></div><br>
+            <input type="radio" name="payment"class="payment-method">Onetime payment
+            <input type="radio" name="payment"class="payment-method">Monthly payment<br><br>
+            <div class="money"></div><label>₹ 100</label><input type="radio" name="pay">
+            <label>₹ 500</label><input type="radio" name="pay">
+            <label>₹1000</label><input type="radio" name="pay" >
+            <label>₹2000</label><input type="radio" name="pay" ></div>
+            <br><br>
+            <label>Phone number</label><br>
+            <input type="number" required maxlength="10">
+            <label>Card number</label>
+            
+
+           </script>
+        </fieldset>
+    </body>
+</html>
